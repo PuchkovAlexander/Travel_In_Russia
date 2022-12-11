@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    background-color: #2A2C2F;
+}
+.header__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 48px 0 48px;
+}
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Inter';
+}
+.header__link:hover {
+    text-decoration: underline;
+}
+.header__link:first-child {
+    padding-right: 18px;
+}
+
+/* travel-in-russia */
+
+.main__title {
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    padding-top: 56px;
+    max-width: 720px;
+    text-align: center;
+}
+.main__title_text {
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 32px;
+    color: #FFFFFF;
+    padding-top: 32px;
+    text-align: center;
+    max-width: 640px;
+}
+.traver-in-russia__image {
+    display: block;
+    margin: 0 auto;
+    max-width: 964px;
+    max-height: 615px;
+    padding-top: 64px;
+}
+.traver-in-russia__caption {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 148px;
+    padding-top: 8px;
+    min-width: 158px;
+    height: 14px;
+}
+.intro__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    color: #fff;
+    padding-left: 148px;
+    padding-top: 92px;
+    max-width: 690px;
+}
+.intro__text {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    padding-left: 148px;
+    padding-top: 40px;
+    color: #fff;
+    max-width: 690px;
+}
