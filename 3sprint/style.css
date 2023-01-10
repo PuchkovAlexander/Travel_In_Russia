@@ -24,7 +24,11 @@ body {
     font-family: 'Inter';
 }
 .header__link:hover {
+    color: #e50f4f;
     text-decoration: underline;
+}
+.link:hover {
+    color: #e50f4f;
 }
 .header__link:first-child {
     padding-right: 18px;
@@ -101,4 +105,443 @@ body {
     padding-top: 40px;
     color: #fff;
     max-width: 690px;
+}
+.intro__list {
+    margin: 0;
+    color: #fff;
+    padding-left: 148px;
+    padding-top: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 690px;
+}
+/* photo-grid section */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 92px 48px 0 48px;
+    gap: 16px;
+}
+
+.places {
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 148px; 
+}
+.place__title {
+    display: flex;
+    padding-top: 80px;
+}
+.title {
+    margin: 0;
+    color: #fff;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    width: 460px;       /* подумать как не фиксировать ширину у текста. */
+}
+.url-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 40px;
+}
+.url {
+    margin: 0;
+    color: #AAAAAA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    max-width: 456px;
+    padding-bottom: 12px;
+}
+.link {
+    margin: 0;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: none;
+    max-width: 456px;
+}
+.link:hover {
+    text-decoration-line: underline;
+    color: #fff;
+}
+.place__image-paragraph {
+    display: flex;
+    padding-top: 48px;
+}
+.two_paragraphs {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.place__paragraph {
+    margin: 0;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    max-width: 484px;
+}
+.place__paragraph:first-child {
+    padding-bottom: 26px;
+}
+.cover {
+    margin: 0 auto;
+    margin-top: 92px;
+    background-image: url("./img/background_trains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    max-width: 1184px;
+}
+.cover__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 44, 47, .3);
+    height: 740px;
+    text-decoration: none;
+} 
+.cover__title {
+    margin: 0 0 32px;
+    max-width: 560px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    text-align: center;
+    color: #fff;
+}
+.cover__subtitle {
+    margin: 0;
+    max-width: 360px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 92px;
+}
+.footer__links {
+    padding-left: 30px;
+}
+.footer__link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 18px;
+    text-decoration: none;
+}
+.footer__link:hover {
+    color: #e50f4f;
+    /*
+    animation-name: font-size;
+    animation-duration: 0.6s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    */
+}
+@keyframes font-size {
+    100% {
+        font-size: 18px;
+    }
+  }
+.footer__copyright {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 48px;
+    max-width: 186px;
+}
+
+@media screen and (max-width: 1024px ) {
+    .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 92px 90px 0 68px;
+        gap: 16px;
+    }
+    .traver-in-russia__caption {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-left: 30px;
+        padding-top: 8px;
+        min-width: 158px;
+        height: 14px;
+    }
+    .places {
+        margin: 0;
+        padding-top: 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 768px ) {
+    .photo-grid {
+        margin-left: 24px;
+        padding: 0;
+        padding-top: 88px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 16px;
+    }
+    .grid__item {
+        width: 352px;
+        height: 264px;
+    }
+    .traver-in-russia__caption {
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 8px;
+        min-width: 158px;
+        padding-left: 24px;
+    }
+    .traver-in-russia__image {
+        max-width: 768px;
+    }
+    .intro__text {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 40px;
+        max-width: 720px;
+    }
+    .intro__title {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 92px;
+        max-width: 720px;
+    }
+    .intro__list {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 33px;
+        max-width: 720px;
+    }
+    .place__image {
+        width: 340px;
+        height: 340px;
+    }
+    .places {
+        padding: 0;
+        margin: 0;
+    }
+    .place__paragraph {
+        max-width: 352px;
+    }
+    .two_paragraphs {
+        padding-left: 28px;
+    }
+    .place__image-paragraph {
+        justify-content: center;
+    }
+    .place__title {
+        justify-content: center;
+    }
+    .title {
+        max-width: 340px;
+    }
+    .url-link {
+        width: 352px;
+    }
+}
+    @media screen and (max-width: 320px ) {
+    .header {
+        max-width: 320px;
+    }
+    .header__logo {
+        max-width: 142px;
+        padding-right: 54px;
+    }
+    .header__links {
+        display: flex;
+        max-width: 44px;
+        padding-right: 25px;
+    }
+    .header__items {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__link {
+        width: 22px;
+        height: 20px;
+    }
+    .main__title {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+        max-width: 288px;
+        padding-top: 48px;
+    }
+    .main__title_text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 288px;
+        padding-top: 16px;
+    }
+    .traver-in-russia__image {
+        padding-top: 40px;
+        width: 320px;
+        height: 200px;
+    }
+    .traver-in-russia__caption {
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+    }
+    .intro__title {
+        padding-top: 64px;
+    }
+    .intro__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 288px;
+    }
+    .intro__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163%;
+        max-width: 288px;
+    }
+    .intro__list {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 288px;
+        padding-top: 34px;
+    }
+    .photo-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 64px 16px 0 16px;
+        padding: 0;
+    }
+    .grid__item {
+        width: 288px;
+        height: 216px;
+    }
+    .place__title {
+        display: block;
+        padding: 0;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 288px;
+        margin: 0 auto;
+        margin-top: 64px;
+    }
+    .url {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 2px;
+        padding-top: 32px;
+    }
+    .url-link {
+        padding: 0;
+        max-width: 288px;
+        margin: 0 auto;
+    }
+    .link {
+        max-width: 288px;
+    }
+    .place__image {
+        padding-bottom: 32px;
+        width: 320px;
+        height: 320px;
+    }
+    .place__image-paragraph {
+        display: inline-block;
+    }
+    .place__paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163%;
+    }
+    .two_paragraphs {
+        padding: 0;
+        max-width: 288px;
+        margin: 0 auto;
+    }
+    .place__paragraph:first-child {
+        padding-bottom: 25px;
+    }
+    .cover__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 288px;
+    }
+    .cover__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 288px;
+    }
+    .cover {
+        max-width: 320px;
+        max-height: 200px
+    }
+    .cover__overlay {
+        width: 320px;
+        height: 200px;
+    }
+    .footer {
+        display: inline-block;
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+    .footer__link {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 0;
+        padding-bottom: 32px;
+    }
+    .footer__links {
+        display: grid;
+        padding-left: 16px;
+    }
+    .footer__copyright {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        padding-left: 16px;
+    }
 }
